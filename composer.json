@@ -1,0 +1,25 @@
+{
+    "name": "mostafa0alii/dashboard-generator",
+    "description": "Dashboard Template Theme Generator for laravel 9 and above",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Mostafa0alii\\DashboardGenerator\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mostafa0alii\\DashboardGenerator\\DashboardGeneratorServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Mostafa Alii"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
