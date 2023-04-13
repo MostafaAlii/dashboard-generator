@@ -13,6 +13,13 @@
             "providers": [
                 "Mostafa0alii\\DashboardGenerator\\DashboardGeneratorServiceProvider"
             ]
+        },
+        "publish": {
+            "dashboard-generator": [
+                "src/Commands",
+                "resources/views/layouts",
+                "resources/assets"
+            ]
         }
     },
     "authors": [
