@@ -8,18 +8,11 @@ class DashboardGeneratorServiceProvider extends ServiceProvider {
     }
 
     public function boot() {
-        if ($this->app->runningInConsole()) {
-            $this->commands([
-                DashboardInstall::class,
-            ]);
-        }
-        $this->publishableGroups([
-            'views' => [
-                __DIR__.'/../resources/views/layouts' => resource_path('views/dashboard'),
-            ],
-            'public' => [
-                __DIR__.'/../resources/assets' => public_path('assets'),
-            ],
-        ]);
+        $this->publishes([
+            __DIR__.'/../resourses/views' => resource_path('views'),
+        ], 'view');
+        $this->publishes([
+            __DIR__.'/../resourses/assets' => public_path('assets'),
+        ], 'assets');
     }
 }
